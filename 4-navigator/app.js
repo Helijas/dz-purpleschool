@@ -1,3 +1,4 @@
+// Первое домашнее задание по основам
 let addressLat = 10;
 let addressLong = 3;
 let positionLat = 3;
