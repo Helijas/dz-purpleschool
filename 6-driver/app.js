@@ -1,3 +1,4 @@
+// Домашнее задание
 let hasLicence = true;
 let age = 18;
 let isDrunk = false;
