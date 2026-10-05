@@ -7,14 +7,15 @@ function convertCur(sum, cur, needCur){
     let eurTodol = 0.98
 
     if(cur == 'руб' && needCur == '$'){
-        return sum/rubToDol + '$'
+        return sum/rubToDol 
     } else if(cur == '€' && needCur == '$'){
-        return sum/eurTodol + '$'
+        return sum/eurTodol
     } else if(cur == '$' && needCur == 'руб'){
-        return sum * rubToDol + 'руб'
+        return sum * rubToDol
     } else if(cur == '$' && needCur == '€'){
-        return sum * eurTodol + '€'
+        return sum * eurTodol
     } else {
         return null
     }
 }
+console.log(convertCur(sum, cur, needCur))
