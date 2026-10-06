@@ -95,3 +95,26 @@ let readyForWork = days*perDay > work;
 console.log(readyForWork)
 let payment = paymentHour * work;
 console.log(payment)
+
+// -------------------------------------------------------
+const issAdmin = false;
+const notAdmin = true;
+console.log(`Что тут у нас: ${issAdmin && notAdmin}`)
+console.log(`Что тут у нас: ${issAdmin || notAdmin}`)
+console.log(`Что тут у нас: ${!issAdmin}`)
+
+const isEdited = true;
+const isSuper = false;
+console.log(`Что тут у нас: ${!issAdmin && notAdmin && (isEdited || isSuper)}`)
+
+
+let booname = 'Олег'
+console.log(booname || 'User')
+
+let iAdmin = false;
+let fileName = 'pass'
+console.log(iAdmin && fileName)
+
+let ages = 0; // человеку может быть 0 лет
+console.log(ages || 18) // выведет 18 
+console.log(ages ?? 18) // выведет 0
